@@ -44,4 +44,58 @@
     //push method
     person1.push("Male");
     console.log(person1);
+
+    //pop method
+    const animals = ["Dragon", "Phoenix", "Tiger", "Turtle", "Cat"];
+    animals.pop();
+    console.log(animals);
+
+    //push method
+    const animals1 = ["Dragon", "Phoenix", "Tiger"];
+    animals1.push("Turtle");
+    console.log(animals1);
+
+    //shift method, unshift
+    animals.shift();
+    console.log(animals);
+    animals.unshift("Dog");
+    console.log(animals);
+
+    //concat, splice, slice method
+    const arr1 = ["Hello"];
+    const arr2 = ["World!"];
+    const mergingArr = arr1.concat(arr2);
+    console.log(mergingArr);
+
+    mergingArr.splice(3, 0, "<3");
+    console.log(mergingArr);
+
+    let remove = animals.splice(1, 1, "Lion");
+    console.log(animals);
+    console.log(remove);
+
+    let cut = animals.slice(1);
+    console.log(cut);
+
+    //Sort method
+    const number = ["9", "3", "6"];
+    const char = ["A", "N", "H"];
+    number.sort();
+    console.log(number);
+    char.sort();
+    console.log(char);
+
+    //Reverse method
+    char.reverse();
+    console.log(char);
+ 
+    //Fisher Yates Method (To sort the array in random order)
+    const score = ["100","50", "80", "1", "3"];
+    for (let i = score.length - 1; i>0; i--) {
+        let j = Math.floor(Math.random() * (i+1));
+        let k = score[i];
+        score[i] = score[j];
+        score[j] = k;
+    }
+    console.log(score);
 }
