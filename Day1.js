@@ -98,4 +98,19 @@
         score[j] = k;
     }
     console.log(score);
+
+    // Implicit return
+    const add = (a, b) => a + b;
+
+    //Explicit return
+    const minus = (a, b) => {
+        const rs = a - b;
+        return rs;
+    }
+
+    // One parameter, no parentheses
+    const sayHello = hello => console.log(`Hello, ${name}`);
+
+    // No parameters, empty parentheses
+    const sayHelloVietnam = say => console.log("Hello Vietnam");
 }
