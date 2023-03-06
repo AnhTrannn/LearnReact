@@ -1,2 +1,2 @@
 const input = document.getElementById('input');
-const list = document.getElementById('list');
+const list = document.getElementsByClassName('list');
